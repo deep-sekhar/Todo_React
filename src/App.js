@@ -68,7 +68,7 @@ function App() {
   }, [todos])
 
   return (
-    <Router >
+    <Router basename={process.env.PUBLIC_URL}>
       <Header title="Todo list app" searchbar={true}/>
 
       <Switch>
